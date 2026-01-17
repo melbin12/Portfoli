@@ -19,37 +19,44 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I discovered my passion for data science and analytics while exploring 
+              patterns in everyday life. I believe in transforming raw data into 
+              meaningful insights that drive decisions 🤔
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I am proficient in essential data tools like
               <i>
-                <b className="purple"> JavaScript | Python | PHP React| Django | Angular and Go. </b>
+                <b className="purple"> Python | R | SQL | Excel | Tableau | Power BI </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of interest focuses on &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Data Analysis and Visualization </b> 
+                and exploring areas in{" "}
                 <b className="purple">
-                  Blockchain.
+                  Machine Learning and Predictive Analytics.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I enjoy working with data manipulation libraries such as 
+              <b className="purple"> Pandas, NumPy, </b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Data Visualization Tools
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; including
               <i>
-                <b className="purple"> React.js and Angular</b>
+                <b className="purple"> Matplotlib, Seaborn, and Plotly</b>
               </i>
+              <br />
+              <br />
+              Currently exploring statistical analysis, hypothesis testing, and 
+              building my first predictive models while continuously learning 
+              about data ethics and best practices in the field.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
