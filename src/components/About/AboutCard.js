@@ -8,31 +8,55 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Melbin M P </span>
-            from  <span className="purple"> Kerala, India.</span>
-            <br /> 
-            I completed my Masters in Computer Aplication (MCA) from Amal jyothi collegr of engineering.
-            <br />
-            Additionally, I am currently Intern as a software developer at
-            MERN.
+            Hi 👋, I am <span className="purple">Melbin M P</span>, a passionate{" "}
+            <span className="purple">Data Analyst & Data Science Professional</span>{" "}
+            currently based in <span className="purple">Cardiff, United Kingdom</span>.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I am pursuing my <span className="purple">MSc in Data Science</span> at{" "}
+            <span className="purple">Cardiff Metropolitan University</span>, where I am
+            building strong expertise in machine learning, advanced analytics,
+            statistical modeling, and AI-driven solutions.
+            <br />
+            <br />
+            I hold a <span className="purple">Master of Computer Applications (MCA)</span>{" "}
+            from <span className="purple">Amal Jyothi College of Engineering</span>, along
+            with a <span className="purple">BSc in Computer Science</span>. My academic
+            background is complemented by hands-on industry experience in software
+            development, data analysis, and building scalable data-driven systems.
+            <br />
+            <br />
+            Previously, I worked as a <span className="purple">Software Developer</span>{" "}
+            where I developed backend modules, data pipelines, and analytical dashboards
+            for healthcare solutions, enabling data-driven decision-making using{" "}
+            <span className="purple">Python, SQL, Power BI, and Machine Learning models</span>.
+            <br />
+            <br />
+            I am highly interested in transforming raw data into meaningful insights,
+            working with <span className="purple">Machine Learning, Time Series Forecasting,
+            GenAI, and LLM-based applications</span>.
           </p>
+
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Data Analysis & Visualization
             </li>
             <li className="about-activity">
-              <ImPointRight /> watching movie Try to Acting
+              <ImPointRight /> Machine Learning & AI Models
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Building Data-Driven Applications
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Exploring GenAI & LLM Technologies
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Travelling & Continuous Learning
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(155 126 172)", marginTop: "15px" }}>
+            "Turning data into actionable insights that create real-world impact."
           </p>
           <footer className="blockquote-footer">Melbin M P</footer>
         </blockquote>
