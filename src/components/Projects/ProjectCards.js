@@ -1,25 +1,26 @@
-import React from "react";
+import React, { memo } from "react";
+import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import PropTypes from "prop-types";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
 
-function ProjectCards({
-  imgPath,
+const ProjectCards = ({
+  imgPath = "/placeholder.png",
   title,
   description,
   ghLink,
   demoLink,
-  isBlog,
+  isBlog = false,
   techStack = [],
-}) {
+}) => {
   return (
     <Card className="project-card-view h-100">
       <Card.Img
         variant="top"
-        src={imgPath || "/placeholder.png"}
-        alt={`${title} preview`}
+        src={imgPath}
+        alt={`${title} project preview`}
+        loading="lazy"
       />
 
       <Card.Body className="d-flex flex-column">
@@ -35,13 +36,14 @@ function ProjectCards({
           </Card.Text>
         )}
 
-        <div className="mt-auto">
+        <div className="mt-auto d-flex gap-2">
           {ghLink && (
             <Button
               variant="primary"
               href={ghLink}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub Repository"
             >
               <BsGithub /> &nbsp;
               {isBlog ? "Blog" : "GitHub"}
@@ -54,7 +56,7 @@ function ProjectCards({
               href={demoLink}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ marginLeft: "10px" }}
+              aria-label="Live Demo"
             >
               <CgWebsite /> &nbsp; Demo
             </Button>
@@ -63,7 +65,7 @@ function ProjectCards({
       </Card.Body>
     </Card>
   );
-}
+};
 
 ProjectCards.propTypes = {
   imgPath: PropTypes.string,
@@ -75,4 +77,4 @@ ProjectCards.propTypes = {
   techStack: PropTypes.arrayOf(PropTypes.string),
 };
 
-export default ProjectCards;
+export default memo(ProjectCards);
