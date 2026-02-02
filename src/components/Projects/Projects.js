@@ -47,4 +47,52 @@ const projects = [
       "https://6531f7735230994ce772610e--incredible-khapse-0a8e98.netlify.app/",
   },
   {
+    imgPath: wether,
+    title: "Weather Forecast",
+    description:
+      "A real-time weather forecasting web application using HTML, CSS, Bootstrap, JavaScript, and AJAX to fetch live weather data from external APIs.",
+    ghLink: "https://github.com/melbin12/Weather",
+    demoLink: "https://verdant-begonia-075fc7.netlify.app/",
+  },
+  {
+    imgPath: editor,
+    title: "Fly High",
+    description:
+      "A travel adventure website designed to inspire users in planning trips. Built using HTML, CSS, Bootstrap, and JavaScript with an engaging UI.",
+    ghLink: "https://github.com/melbin12/TravelProjectorg",
+    demoLink: "https://cheery-pika-68c06d.netlify.app/",
+  },
+];
 
+function Projects() {
+  return (
+    <Container fluid className="project-section">
+      <Particle />
+      <Container>
+        <h1 className="project-heading">
+          My Recent <strong className="purple">Works</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are a few projects I've worked on recently.
+        </p>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {projects.map((project, index) => (
+            <Col md={4} className="project-card" key={index}>
+              <ProjectCard
+                imgPath={project.imgPath}
+                isBlog={false}
+                title={project.title}
+                description={project.description}
+                ghLink={project.ghLink}
+                demoLink={project.demoLink}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </Container>
+  );
+}
+
+export default Projects;
